@@ -1,6 +1,9 @@
 # Enhanced many-body localization in a kinetically constrained model
+This repository contains the code necessary to recreate the data and figures for the paper "Enhanced many-body localization in a kinetically constrained model" [^Royen2024].
 
-## Origin of data:
+[^Royen2024]: Royen, K., Mondal, S., Pollmann, F. & Heidrich-Meisner, F. Enhanced many-body localization in a kinetically constrained model. Preprint at https://doi.org/10.48550/arXiv.2310.00482 (2024).
+
+## Origin of data for figures:
 ```mermaid
 graph BT;
   subgraph figures [paper figures]
@@ -18,7 +21,7 @@ graph BT;
   B[(hpc/data/raw/newdisorder2/)];
   C[(data/newdisorder2/)];
 
-  F1  -- generate raw data for L<20 sites --> B
+  F1  -- "generate raw data for L<20 sites" --> B
   F1a -- generate raw data for L=20 sites --> B  
   B --> F2;
   F2 -- refine data --> C;
